@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es6",
+    "baseUrl": "./src"
+  },
+  "include": ["src", "prettier.config.js"],
+  "exclude": ["node_modules", "build", "coverage", "dist", "lib"]
+}

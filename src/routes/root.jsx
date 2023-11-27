@@ -39,7 +39,7 @@ export const Root = () => {
 
               <div className='hidden items-center justify-between gap-[70px] lg:flex'>
                 {navList.map((_) => (
-                  <NavLink
+                  <Link
                     className='group relative text-2xl font-bold leading-[50px] text-primary'
                     to={_.href}
                   >
@@ -48,7 +48,7 @@ export const Root = () => {
                       className='absolute bottom-0.5 left-0 h-1.5 w-[0%] bg-[#D52827] transition-all
                       duration-300 ease-in-out group-hover:w-full'
                     ></div>
-                  </NavLink>
+                  </Link>
                 ))}
               </div>
 

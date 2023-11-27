@@ -48,7 +48,7 @@ const hots = [
 
 export const HeroSection = () => {
   return (
-    <section className='px-6 lg:px-20'>
+    <section className='px-6 lg:px-20' id='about'>
       <div className='flex items-center gap-[97px]'>
         <div className=''>
           <h2 className='font-poppins text-xl font-bold leading-[41px] text-secondary lg:text-[32px] lg:leading-[66px]'>

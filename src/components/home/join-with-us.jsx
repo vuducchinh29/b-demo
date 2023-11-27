@@ -23,7 +23,7 @@ const hots = [
 
 export const JoinWithUs = () => {
   return (
-    <section className='px-6 pt-[25px] lg:px-20 lg:pt-[47px]'>
+    <section className='px-6 pt-[25px] lg:px-20 lg:pt-[47px]' id='join-us'>
       <h2 className='home-title'>Join With Us</h2>
 
       <div className='mt-4 grid w-full grid-cols-1 gap-4 lg:mt-6 lg:grid-cols-3 lg:gap-[37px]'>

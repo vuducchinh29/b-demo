@@ -12,9 +12,9 @@ import { classNames } from 'utils'
 
 export const Root = () => {
   const [navList, setNavList] = useState([
-    { name: 'About', href: '/', current: true },
-    { name: 'Team & Partner', href: '/', current: false },
-    { name: 'Join Us', href: '/', current: false },
+    { name: 'About', href: '#about', current: true },
+    { name: 'Team & Partner', href: '#team-partner', current: false },
+    { name: 'Join Us', href: '#join-us', current: false },
     { name: 'Blog', href: '/blogs', current: false }
   ])
 

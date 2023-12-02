@@ -4,17 +4,18 @@ import Logo from 'assets/images/logo.png'
 import Menu from 'assets/images/menu.svg'
 import XMobileIcon from 'assets/images/tw-mobile-icon.svg'
 
-import { Link, NavLink, Outlet } from 'react-router-dom'
+import { Link, Outlet } from 'react-router-dom'
 
 import { Disclosure } from '@headlessui/react'
 import { useState } from 'react'
+import { HashLink } from 'react-router-hash-link'
 import { classNames } from 'utils'
 
 export const Root = () => {
   const [navList, setNavList] = useState([
-    { name: 'About', href: '#about', current: true },
-    { name: 'Team & Partner', href: '#team-partner', current: false },
-    { name: 'Join Us', href: '#join-us', current: false },
+    { name: 'About', href: '/#about', current: true },
+    { name: 'Team & Partner', href: '/#team-partner', current: false },
+    { name: 'Join Us', href: '/#join-us', current: false },
     { name: 'Blog', href: '/blogs', current: false }
   ])
 
@@ -39,7 +40,7 @@ export const Root = () => {
 
               <div className='hidden items-center justify-between gap-[70px] lg:flex'>
                 {navList.map((_) => (
-                  <Link
+                  <HashLink
                     className='group relative text-2xl font-bold leading-[50px] text-primary'
                     to={_.href}
                   >
@@ -48,7 +49,7 @@ export const Root = () => {
                       className='absolute bottom-0.5 left-0 h-1.5 w-[0%] bg-[#D52827] transition-all
                       duration-300 ease-in-out group-hover:w-full'
                     ></div>
-                  </Link>
+                  </HashLink>
                 ))}
               </div>
 

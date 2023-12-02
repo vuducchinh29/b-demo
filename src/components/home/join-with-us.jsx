@@ -23,12 +23,14 @@ const hots = [
 
 export const JoinWithUs = () => {
   return (
-    <section className='px-6 pt-[25px] lg:px-20 lg:pt-[47px]' id='join-us'>
+    <section className='relative px-6 pt-[25px] lg:px-20 lg:pt-[47px]'>
+      <div className='absolute -top-[111px] left-0' id='join-us'></div>
+
       <h2 className='home-title'>Join With Us</h2>
 
       <div className='mt-4 grid w-full grid-cols-1 gap-4 lg:mt-6 lg:grid-cols-3 lg:gap-[37px]'>
         {hots.map((_, idx) => (
-          <div className='relative col-span-1'>
+          <div className='relative col-span-1' key={idx}>
             <div className='absolute left-0 top-0 z-[2] flex h-full w-full items-center gap-5 p-[34px] lg:gap-6 lg:p-10'>
               <img src={_.icon} alt='icon' />
               <p

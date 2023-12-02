@@ -43,13 +43,13 @@ export const OurPrinciples = () => {
     <section className='mt-[38px] bg-white p-0 lg:mt-[59px] lg:bg-primary lg:pb-[77px] lg:pt-[25px]'>
       <div className=''>
         <div className='ml-20 hidden items-center text-[32px] font-bold leading-[67px] lg:flex'>
-          <p className='relative z-[2] text-primary'>
+          <div className='relative z-[2] text-primary'>
             <span className='relative z-[2]'>Our Prin</span>
             <div
               className='absolute -right-2 -top-[40%] z-[1] hidden aspect-square 
               w-[443px] -translate-y-1/2 rounded-full bg-secondary lg:block'
             ></div>
-          </p>
+          </div>
           <p className='text-white'>ciples</p>
         </div>
         <h2 className='home-title ml-6 lg:hidden'>Our Principles</h2>

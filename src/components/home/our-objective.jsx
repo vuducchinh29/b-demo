@@ -5,7 +5,7 @@ import PenetratingImage from 'assets/images/penetrating.png'
 import Penetrating2Image from 'assets/images/penetrating2.png'
 import VietNamImage from 'assets/images/vietnam.png'
 
-import { useState } from 'react'
+import { Fragment, useState } from 'react'
 import { Autoplay, Pagination } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
 
@@ -58,7 +58,7 @@ export const OutObjective = () => {
         onSlideChange={({ activeIndex }) => setSlideIndex(activeIndex)}
       >
         {outObjectiveList.map((_, idx, arr) => (
-          <>
+          <Fragment key={idx}>
             {idx % 3 === 0 ? (
               <SwiperSlide className='' key={idx}>
                 <div className='grid grid-cols-1 gap-4 px-6 lg:grid-cols-3 lg:gap-11 lg:px-20'>
@@ -86,7 +86,7 @@ export const OutObjective = () => {
                 </div>
               </SwiperSlide>
             ) : null}
-          </>
+          </Fragment>
         ))}
       </Swiper>
     </section>

@@ -28,7 +28,8 @@ const partnerList = [
 
 export const TeamPartner = () => {
   return (
-    <section className='relative pt-6 lg:pt-16' id='team-partner'>
+    <section className='relative pt-6 lg:pt-16'>
+      <div className='absolute -top-[111px] left-0' id='team-partner'></div>
       <div
         className='absolute -bottom-[68px] -right-[145px] z-[1] hidden aspect-square w-[443px] 
         rounded-full bg-secondary
@@ -49,8 +50,11 @@ export const TeamPartner = () => {
         </p>
 
         <div className='grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4 lg:gap-7'>
-          {partnerList.map((_) => (
-            <div className='col-span-1 flex h-[258px] flex-col items-center justify-center rounded-[20px] bg-primary'>
+          {partnerList.map((_, idx) => (
+            <div
+              key={idx}
+              className='col-span-1 flex h-[258px] flex-col items-center justify-center rounded-[20px] bg-primary'
+            >
               <img src={_.avatar} alt='avatar' className='h-[125px]' />
               <p className='text-base font-bold leading-[32px] text-white'>
                 {_.name}

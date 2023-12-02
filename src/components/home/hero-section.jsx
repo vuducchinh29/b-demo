@@ -48,7 +48,7 @@ const hots = [
 
 export const HeroSection = () => {
   return (
-    <section className='px-6 lg:px-20' id='about'>
+    <section className='px-6 lg:px-20'>
       <div className='flex items-center gap-[97px]'>
         <div className=''>
           <h2 className='font-poppins text-xl font-bold leading-[41px] text-secondary lg:text-[32px] lg:leading-[66px]'>
@@ -69,8 +69,8 @@ export const HeroSection = () => {
           </div>
 
           <div className='mt-[30px] grid grid-cols-2 gap-4 lg:mt-[63px] lg:gap-6 xl:grid-cols-3'>
-            {infoList.map((_) => (
-              <InfoBox name={_.name} value={_.value} />
+            {infoList.map((_, idx) => (
+              <InfoBox name={_.name} value={_.value} key={idx} />
             ))}
           </div>
         </div>
@@ -81,7 +81,7 @@ export const HeroSection = () => {
 
       <div className='mt-7 grid w-full grid-cols-1 gap-4 lg:mt-[150px] lg:grid-cols-3 lg:gap-[37px]'>
         {hots.map((_, idx) => (
-          <div className='relative col-span-1'>
+          <div className='relative col-span-1' key={idx}>
             <div className='absolute left-0 top-0 z-[2] flex h-full w-full items-center gap-5 p-[34px] lg:gap-6 lg:p-10'>
               <img src={_.icon} alt='icon' />
               <p

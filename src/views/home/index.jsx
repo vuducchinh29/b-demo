@@ -13,7 +13,7 @@ export const Home = () => {
   }, [])
 
   return (
-    <div className='overflow-hidden pt-6 lg:pt-[70px]'>
+    <div className='overflow-hidden scroll-smooth pt-6 lg:pt-[70px]' id='about'>
       <HeroSection />
 
       <VisionSection />

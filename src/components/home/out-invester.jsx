@@ -21,7 +21,7 @@ export const OutInvester = () => {
     <section className='pt-6 lg:pt-12'>
       <div className='px-6 lg:px-20'>
         <h2 className='home-title !leading-[66px] !text-primary'>
-          Our Invester
+          Our Investor
         </h2>
       </div>
 

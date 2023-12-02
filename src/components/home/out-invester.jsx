@@ -29,13 +29,13 @@ export const OutInvester = () => {
         <div className='relative hidden lg:block'>
           <div className=''>
             <Swiper
-              className='blue-invester-sw relative pb-[50px]'
+              className='blue-invester-sw relative'
               modules={[Autoplay, Pagination]}
               effect='cards'
               spaceBetween={0}
               slidesPerView={4}
               autoplay={true}
-              pagination
+              pagination={false}
               onSwiper={setSwiper}
               onSlideChange={({ activeIndex }) => setSlideIndex(activeIndex)}
             >

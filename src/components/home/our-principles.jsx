@@ -15,7 +15,7 @@ const ourPrinciplesList = [
   {
     title: 'Trust and Integrity',
     detail:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+      "We hold ourselves to the highest standards of trust and integrity, fostering strong relationships built on transparency, honesty, and reliability. With ethical practices at the core of our values, we prioritize the long-term interests of the startups we support, ensuring their trust in us remains unwavering.",
     image: PrinciplesImg01,
     numImg: PrinciplesNumberImg01
   },

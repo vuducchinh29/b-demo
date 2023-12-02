@@ -26,7 +26,7 @@ export const Home = () => {
 
       <OutInvester />
 
-      <JoinWithUs />
+      {/* <JoinWithUs /> */}
     </div>
   )
 }

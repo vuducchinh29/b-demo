@@ -6,23 +6,23 @@ import Partner04Img from 'assets/images/partner-04.svg'
 const partnerList = [
   {
     avatar: Partner01Img,
-    name: 'Thanh Dao',
-    position: 'CTO'
+    name: 'John Doe',
+    position: 'Managing Partner'
   },
   {
     avatar: Partner02Img,
-    name: 'Logan',
-    position: 'CMO'
+    name: 'Jane Smith',
+    position: 'Managing Partner'
   },
   {
     avatar: Partner03Img,
-    name: 'John peter',
-    position: 'COO'
+    name: 'Bob Miller',
+    position: 'Investment Director'
   },
   {
     avatar: Partner04Img,
-    name: 'John peter',
-    position: 'COO'
+    name: 'Lisa Wong',
+    position: 'Operations Manager'
   }
 ]
 
@@ -39,14 +39,15 @@ export const TeamPartner = () => {
         <h2 className='home-title !text-primary'>Team & Partner</h2>
 
         <p className='py-4 text-sm leading-[26px] text-primary lg:pb-7 lg:pt-6 lg:font-bold'>
-          Our passionate team of experts and blockchain enthusiasts harnesses
+          {/* Our passionate team of experts and blockchain enthusiasts harnesses
           diverse backgrounds and extensive experience to empower startups in
           their blockchain journey. Through strategic partnerships with renowned
           organizations and leading technology firms, we amplify our network,
           resources, and expertise. This ensures startups receive unparalleled
           support for success. Together, we cultivate a dynamic ecosystem that
           fosters collaboration, fuels growth, and accelerates the adoption of
-          blockchain technology.
+          blockchain technology. */}
+          Led by John and Jane, our team brings together diverse expertise across technology, investing, and startup operations. We have experience building multiple successful companies from the ground up.
         </p>
 
         <div className='grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4 lg:gap-7'>

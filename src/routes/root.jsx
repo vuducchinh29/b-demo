@@ -88,7 +88,7 @@ export const Root = () => {
         )}
       </Disclosure>
 
-      <div className='pb-[85.53px] pt-[112px] lg:pb-[137px]'>
+      <div className='pt-[112px]'>
         <Outlet />
       </div>
 
@@ -110,25 +110,24 @@ export const Root = () => {
               <p className='text-xs font-bold uppercase opacity-0'>abc</p>
               <div className='space-y-16'>
                 <p className='text-sm leading-6'>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.{' '}
+                  Join B.ARMY for access to a powerful VC ecosystem and our accelerator program to succeed in the Vietnam blockchain market.{' '}
                 </p>
-                <p className='text-sm leading-6'>@Lorem</p>
+                {/* <p className='text-sm leading-6'>@Lorem</p> */}
               </div>
             </div>
 
-            <div
+            {/* <div
               className='space-y-[41px] border-t border-t-[#E6E8EC] py-8 text-[#23262F] 
               lg:max-w-[120px] lg:space-y-5 lg:border-none lg:py-0 lg:pb-[53px] lg:text-primary'
             >
               <h3 className='text-xs font-bold uppercase'>About us</h3>
               <div className='space-y-2'>
-                <p className='text-sm leading-6'>43252 Borer Mountains</p>
-                <p className='text-sm leading-6'>Zackerychester</p>
-                <p className='text-sm leading-6'>Bahamas</p>
-                <p className='text-sm leading-6'>732-528-4945</p>
+                <p className='text-sm leading-6'></p>
+                <p className='text-sm leading-6'></p>
+                <p className='text-sm leading-6'></p>
+                <p className='text-sm leading-6'></p>
               </div>
-            </div>
+            </div> */}
 
             <div
               className='space-y-[41px] border-t border-t-[#E6E8EC] py-8 text-[#23262F] 
@@ -137,10 +136,9 @@ export const Root = () => {
               <h3 className='text-xs font-bold uppercase'>Contact us</h3>
               <div className='space-y-2'>
                 <p className='text-sm leading-6'>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.{' '}
+                  Email: Business@b.army {' '}
                 </p>
-                <p className='text-sm leading-6'>+908 89097 890</p>
+                <p className='text-sm leading-6'>Telegram: https://t.me/barmyofficialchannel</p>
               </div>
             </div>
 
@@ -192,7 +190,7 @@ export const Root = () => {
         </div>
 
         <div className='hidden justify-center border-t border-t-primary px-6 py-[29px] text-[13px] font-bold text-primary lg:flex lg:px-20'>
-          Copyright ® 2021 Lorem All rights Rcerved
+          Copyright ® 2023 by B.Army
         </div>
       </footer>
     </div>

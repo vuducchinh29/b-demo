@@ -11,28 +11,34 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 
 const outObjectiveList = [
   {
-    title: 'Penetrating the Vietnam Market',
+    title: 'Increase Awareness',
     detail:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+      "Educate the Vietnamese population about the benefits and opportunities of web 3 technologies and cryptocurrencies through targeted educational campaigns and workshops.",
     image: VietNamImage
   },
   {
-    title: 'Penetrating the Vietnam Market',
+    title: 'Foster Collaboration',
     detail:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+      "Facilitate partnerships between local and international blockchain and web 3 development companies to promote knowledge sharing and technology transfer.",
     image: PenetratingImage
   },
   {
-    title: 'Penetrating the Vietnam Market',
+    title: 'Regulatory Advocacy',
     detail:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+      "Advocate for clear and supportive regulations for cryptocurrency and web 3 technologies in Vietnam to create a favorable environment for innovation and investment.",
     image: Penetrating2Image
   },
   {
-    title: 'Penetrating the Vietnam Market',
+    title: 'Skill Development',
     detail:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+      "Offer training programs and resources to enhance the technical skills and knowledge of Vietnamese developers in blockchain and web 3 technologies.",
     image: Penetrating2Image
+  },
+  {
+    title: 'Community Engagement',
+    detail:
+      "Build and engage a strong community of web 3 enthusiasts, developers, and entrepreneurs through events, meetups, and online forums to foster collaboration and knowledge sharing.",
+    image: PenetratingImage
   }
 ]
 
@@ -82,7 +88,13 @@ export const OutObjective = () => {
                       title={arr[idx + 2].title}
                       detail={arr[idx + 2].detail}
                     />
-                  ) : null}
+                  ) : (
+                    <ObjectiveItem
+                      image={_.image}
+                      title={_.title}
+                      detail={_.detail}
+                    />
+                  )}
                 </div>
               </SwiperSlide>
             ) : null}

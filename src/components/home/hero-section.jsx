@@ -56,7 +56,7 @@ export const HeroSection = () => {
           </h2>
 
           <p className='mt-2 text-base font-bold leading-[20px] lg:mt-6 lg:text-[40px] lg:leading-[50px]'>
-            Top-tier Blockchain VC Ecosytem to Penatrate the{' '}
+            Top-tier Blockchain VC Ecosystem to Penetrate the{' '}
             <span className='text-[#F03D26]'>Vietnam</span> Market
           </p>
 
@@ -68,7 +68,7 @@ export const HeroSection = () => {
             />
           </div>
 
-          <div className='mt-[30px] grid grid-cols-2 gap-4 lg:mt-[63px] lg:grid-cols-3 lg:gap-6'>
+          <div className='mt-[30px] grid grid-cols-2 gap-4 lg:mt-[63px] lg:gap-6 xl:grid-cols-3'>
             {infoList.map((_) => (
               <InfoBox name={_.name} value={_.value} />
             ))}
@@ -112,7 +112,9 @@ const InfoBox = ({ value, name }) => {
       bg-white lg:h-[111px] lg:p-6'
     >
       <p className='text-base font-bold text-primary lg:text-2xl'>{value}</p>
-      <p className='text-xs font-bold text-[#404040] lg:text-lg'>{name}</p>
+      <p className='line-clamp-1 text-center text-xs font-bold text-[#404040] lg:text-lg'>
+        {name}
+      </p>
     </div>
   )
 }

@@ -20,12 +20,9 @@ export const VisionSection = () => {
           lg:mt-6 lg:text-left lg:text-xl lg:font-bold lg:leading-[41px]'
         >
           Our vision is to establish ourselves as the foremost driving force
-          behind blockchain innovation and adoption in the dynamic Vietnam
-          market. We are committed to empowering startups, enabling them to
-          flourish and spearhead transformative changes across industries. By
-          leveraging cutting-edge technology, forging strategic partnerships,
-          and providing unparalleled support, we aim to create an ecosystem that
-          propels the growth and success of blockchain-driven ventures.
+          behind blockchain innovation and adoption in Vietnam's dynamic market
+          by empowering startups through cutting-edge technology and exceptional
+          support.
         </p>
       </div>
     </section>

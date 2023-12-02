@@ -1,6 +1,6 @@
 import TagIcon from 'assets/images/tag.svg'
 
-export const Header = ({ title, date, authorAvatar, authorName, tag }) => {
+export const Header = ({ title, date, authorAvatar, authorName, tags }) => {
   return (
     <div className='font-poppins text-primary'>
       <div className='flex items-center gap-4'>
@@ -21,10 +21,21 @@ export const Header = ({ title, date, authorAvatar, authorName, tag }) => {
       <h1 className='mt-[17px] font-sen text-xl font-bold leading-[32px] lg:mb-[34px] lg:mt-6 lg:text-[48px] lg:leading-[64px]'>
         {title}
       </h1>
-      <div className='hidden items-center gap-2 lg:flex'>
-        <img src={TagIcon} alt='tag icon' className='h-6 w-6 object-contain' />
-        <p className='font-sen text-2xl font-bold text-[#232536]'>{tag}</p>
-      </div>
+
+      {tags?.length ? (
+        <div className='hidden items-center gap-2 lg:flex'>
+          <img
+            src={TagIcon}
+            alt='tag icon'
+            className='h-6 w-6 object-contain'
+          />
+          <p className='divide-x divide-[#232536]/60 font-sen text-2xl font-bold text-[#232536]'>
+            {tags.map((_) => (
+              <span className='px-2'>{_}</span>
+            ))}
+          </p>
+        </div>
+      ) : null}
     </div>
   )
 }

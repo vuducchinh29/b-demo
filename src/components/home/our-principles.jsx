@@ -22,14 +22,14 @@ const ourPrinciplesList = [
   {
     title: 'Long-term Partnership',
     detail:
-      'We believe in cultivating long-term partnerships with startups based on mutual trust, shared goals, and comprehensive support. Committed to their growth and success, we provide ongoing guidance, resources, and strategic advice. As a trusted partner, we stand by startups throughout their journey, offering assistance in navigating challenges and seizing opportunities.',
+      'We believe in cultivating long-term partnerships built on mutual trust, shared goals, and comprehensive support. As a committed partner, we provide ongoing guidance, resources, and strategic advice to help startups grow and succeed. Throughout their journey, we stand by startups as a trusted partner, assisting them in overcoming challenges and capturing opportunities.',
     image: PrinciplesImg02,
     numImg: PrinciplesNumberImg02
   },
   {
     title: 'Innovation and Adaptability',
     detail:
-      "At the heart of our culture lies innovation and adaptability. We encourage startups to explore cutting-edge ideas and technologies, pushing the boundaries of what's possible in the blockchain landscape. Staying ahead of industry trends and emerging opportunities, we foster an environment that promotes agility and adaptability, empowering startups to thrive in the ever-evolving world of blockchain.",
+      'At the heart of our culture are innovation and adaptability. We encourage startups to explore cutting-edge ideas and technologies by pushing boundaries in the blockchain landscape. By staying ahead of trends and emerging opportunities, we foster an agile and adaptable environment empowering startups to thrive in the ever-evolving blockchain world.',
     image: PrinciplesImg03,
     numImg: PrinciplesNumberImg03
   }
@@ -57,7 +57,7 @@ export const OurPrinciples = () => {
 
       <div className='mt-4 bg-primary pt-10 lg:mt-0 lg:hidden'>
         <Swiper
-          className='pb-[74px] yellow-invester-sw'
+          className='yellow-invester-sw pb-[74px]'
           modules={[Autoplay, Pagination]}
           effect='cards'
           spaceBetween={16}

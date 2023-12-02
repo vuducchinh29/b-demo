@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong {
+    @apply font-bold;
+  }
+}
+
 .def-shadow {
   box-shadow: 12.07059px 18.10588px 25.48236px 0px rgba(51, 51, 51, 0.2);
 }
@@ -37,4 +49,12 @@
 
 .yellow-invester-sw .swiper-pagination-bullet-active {
   @apply h-[15px] w-[45px] rounded-full bg-secondary;
+}
+
+.blog-paragraph * {
+  @apply text-base leading-[28px];
+}
+
+.blog-paragraph a {
+  @apply font-semibold hover:underline;
 }

@@ -1,12 +1,30 @@
 import FakeBlogs from 'data/fake-blogs.json'
 
-import { useEffect } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 
+import blogAPI from 'apis/blog-api'
 import { BlogCard } from 'components/blog/blog-card'
 
-const blogsData = FakeBlogs.blogsData
+const { blogsData } = FakeBlogs
 
 export const Blogs = () => {
+  const [blogs, setBlogs] = useState([])
+
+  const getBlogs = useCallback(async () => {
+    try {
+      const result = await blogAPI.getBlogs(25)
+
+      console.log(result.data)
+      setBlogs(result.data)
+    } catch (error) {
+      console.error(error)
+    }
+  }, [])
+
+  useEffect(() => {
+    getBlogs()
+  }, [getBlogs])
+
   useEffect(() => {
     window.scrollTo({ top: 0 })
   }, [])
@@ -31,8 +49,8 @@ export const Blogs = () => {
         ></div>
 
         <article className='grid grid-cols-1 gap-4 px-6 lg:grid-cols-3 lg:gap-[46px] lg:px-20'>
-          {blogsData.map((_) => (
-            <BlogCard data={_} />
+          {blogs.map((_) => (
+            <BlogCard data={_} key={_.id} />
           ))}
         </article>
       </section>

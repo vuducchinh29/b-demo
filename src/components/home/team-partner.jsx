@@ -7,12 +7,12 @@ const partnerList = [
   {
     avatar: Partner01Img,
     name: 'John Doe',
-    position: 'Managing Partner'
+    position: 'CEO & Managing Partner'
   },
   {
     avatar: Partner02Img,
     name: 'Jane Smith',
-    position: 'Managing Partner'
+    position: 'COO & Managing Partner'
   },
   {
     avatar: Partner03Img,

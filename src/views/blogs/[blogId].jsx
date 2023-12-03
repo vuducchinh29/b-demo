@@ -37,7 +37,7 @@ export const BlogDetail = () => {
   }, [getBlog])
 
   return (
-    <main className='pt-6 lg:pt-[70px]'>
+    <main className='pt-6 lg:pt-[70px] pb-[85.53px] lg:pb-[137px]'>
       <div className='px-6 lg:px-[336px]'>
         <Header
           title={data.title}

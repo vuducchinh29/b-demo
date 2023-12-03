@@ -30,7 +30,7 @@ export const Blogs = () => {
   }, [])
 
   return (
-    <main className='overflow-hidden pt-6 lg:pt-[70px]'>
+    <main className='overflow-hidden pt-6 lg:pt-[70px] pb-[85.53px] lg:pb-[137px]'>
       <h1
         className='px-6 text-left text-xl font-bold leading-[42px] 
         text-primary lg:text-center lg:text-[40px] lg:leading-[50px]'

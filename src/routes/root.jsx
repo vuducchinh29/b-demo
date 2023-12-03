@@ -2,11 +2,13 @@ import FBMobileIcon from 'assets/images/fb-mobile-icon.svg'
 import InsMobileIcon from 'assets/images/instagram-mobile-icon.svg'
 import Logo from 'assets/images/logo.png'
 import Menu from 'assets/images/menu.svg'
+import MobileLogo from 'assets/images/mobile-logo.svg'
 import XMobileIcon from 'assets/images/tw-mobile-icon.svg'
 
 import { Link, Outlet } from 'react-router-dom'
 
 import { Disclosure } from '@headlessui/react'
+import useWindowSize from 'hooks/use-window-size'
 import { useState } from 'react'
 import { HashLink } from 'react-router-hash-link'
 import { classNames } from 'utils'
@@ -21,6 +23,8 @@ export const Root = () => {
 
   const [activeName, setActiveName] = useState('')
 
+  const { width } = useWindowSize()
+
   return (
     <div className=''>
       <Disclosure
@@ -32,7 +36,7 @@ export const Root = () => {
             <div className='flex h-[112px] w-full items-center justify-between px-6 lg:px-20'>
               <Link className='' to={'/'}>
                 <img
-                  src={Logo}
+                  src={width < 1024 ? MobileLogo : Logo}
                   alt='b.army logo'
                   className='h-6 w-[101px] lg:h-[42px] lg:w-[171px]'
                 />

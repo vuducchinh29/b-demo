@@ -33,7 +33,7 @@ export const Root = () => {
       >
         {({ open }) => (
           <>
-            <div className='flex h-[112px] w-full items-center justify-between px-6 lg:px-20'>
+            <div className='flex h-[80px] lg:h-[112px] w-full items-center justify-between px-6 lg:px-20'>
               <Link className='' to={'/'}>
                 <img
                   src={width < 1024 ? MobileLogo : Logo}
@@ -92,7 +92,7 @@ export const Root = () => {
         )}
       </Disclosure>
 
-      <div className='pt-[112px]'>
+      <div className='pt-[80px] lg:pt-[112px]'>
         <Outlet />
       </div>
 

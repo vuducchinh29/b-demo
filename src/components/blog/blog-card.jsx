@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom'
 
+const base_url = process.env.REACT_APP_API_URI
+
 export const BlogCard = ({ data }) => {
   return (
     <Link className='' to={`/blogs/${data.id}`}>
@@ -25,7 +27,7 @@ export const BlogCard = ({ data }) => {
           <div className='absolute left-0 top-0 z-[2] h-full w-full bg-black/30'></div>
           <img
             className='relative z-[1] h-full w-full scale-100 object-cover blur-0 transition-all group-hover:scale-110'
-            src={data.cover}
+            src={`${base_url}/assets/${data.cover}?quality=25`}
             alt='cover'
           />
         </div>

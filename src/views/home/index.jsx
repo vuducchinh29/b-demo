@@ -22,7 +22,7 @@ export const Home = () => {
 
       <OurPrinciples />
 
-      <TeamPartner />
+      {/* <TeamPartner /> */}
 
       {/* <OutInvester /> */}
 

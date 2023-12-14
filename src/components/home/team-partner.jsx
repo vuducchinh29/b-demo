@@ -28,7 +28,7 @@ const partnerList = [
 
 export const TeamPartner = () => {
   return (
-    <section className='relative pt-6 lg:pt-16'>
+    <section className='relative pt-6 pb-6 lg:pt-16 lg:pb-16'>
       <div className='absolute -top-[111px] left-0' id='team-partner'></div>
       <div
         className='absolute -bottom-[68px] -right-[145px] z-[1] hidden aspect-square w-[443px] 
